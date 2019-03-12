@@ -19,13 +19,13 @@ use Monolog\Logger;
 use TelegramLog\Handler\TelegramHandler;
 use TelegramLog\Formatter\TelegramFormatter;
 
-$chatId = '@yourChatId';
 $botToken = 'your-bot-token';
+$chatId = '@yourChatId';
 
 $logger = new Logger(
     'logger_dev',
     [
-        (new TelegramHandler(BOT_TOKEN, CHAT_ID))
+        (new TelegramHandler($botToken, $chatId))
             ->setFormatter(new TelegramFormatter()),
     ]
 );
