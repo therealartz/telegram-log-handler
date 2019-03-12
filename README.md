@@ -7,7 +7,7 @@ For me in some cases it's very convenient to receive logs in Telegram, so I wrot
 # Requirements
   
 * PHP 7.1+
-* CURL extension activated
+* cURL and mbstring extensions activated
 
 # Usage
 
