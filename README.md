@@ -31,3 +31,23 @@ $logger = new Logger(
 
 $logger->info('My logger works!');
 ```
+
+## Set up handler in Laravel
+
+According to Laravel [docs](https://laravel.com/docs/5.8/logging#advanced-monolog-channel-customization) in `config/logging.php` add channel:
+
+```php
+return [
+    // ...
+    'telegram' => [
+        'driver' => 'monolog',
+        'handler' => \TelegramLog\Handler\TelegramHandler::class,
+        'with' => [
+            'botToken' => 'your-bot-token',
+            'chatId' => '@yourChatId',
+        ],
+    ],
+];
+```
+
+And use by set in .env `LOG_CHANNEL=telegram`
