@@ -1,5 +1,7 @@
 # telegram-log-handler: Monolog handler for sending logs by Telegram bot 
 
+[![Latest Stable Version](https://poser.pugx.org/therealartz/telegram-log-handler/v/stable)](https://packagist.org/packages/therealartz/telegram-log-handler) [![Total Downloads](https://poser.pugx.org/therealartz/telegram-log-handler/downloads)](https://packagist.org/packages/therealartz/telegram-log-handler) 
+
 This package provides Handler for Monolog Logger.
 
 For me in some cases it's very convenient to receive logs in Telegram, so I wrote a short handler for using in any project.
