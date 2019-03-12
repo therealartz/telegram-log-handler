@@ -18,7 +18,6 @@ For me in some cases it's very convenient to receive logs in Telegram, so I wrot
 
 use Monolog\Logger;
 use TelegramLog\Handler\TelegramHandler;
-use TelegramLog\Formatter\TelegramFormatter;
 
 $botToken = 'your-bot-token';
 $chatId = '@yourChatId';
@@ -26,8 +25,7 @@ $chatId = '@yourChatId';
 $logger = new Logger(
     'logger_dev',
     [
-        (new TelegramHandler($botToken, $chatId))
-            ->setFormatter(new TelegramFormatter()),
+        new TelegramHandler($botToken, $chatId)
     ]
 );
 

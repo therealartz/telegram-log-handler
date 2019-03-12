@@ -74,7 +74,7 @@ class TelegramHandler extends AbstractProcessingHandler
                 ],
                 [
                     'name' => 'document',
-                    'contents' => $record['message'],
+                    'contents' => $record['formatted'],
                     'filename' => "{$fileName}.log",
                     'headers' => [
                         'Content-Type' => 'text/plain; charset=UTF8',
