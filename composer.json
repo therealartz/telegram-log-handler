@@ -1,0 +1,23 @@
+{
+  "name": "therealartz/telegram-log-handler",
+  "description": "Telegram Handler for Monolog Logger.",
+  "type": "library",
+  "require": {
+    "php": "^7.1",
+    "monolog/monolog": "^2.0@dev",
+    "guzzlehttp/guzzle": "^6.3@dev"
+  },
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "TelegramLog\\": "src"
+    }
+  },
+  "authors": [
+    {
+      "name": "Artem Zakharchenko",
+      "email": "artz.relax@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev"
+}
