@@ -57,7 +57,6 @@ class TelegramHandler extends AbstractProcessingHandler
             'query' => [
                 'chat_id' => $this->chatId,
                 'text' => $message,
-                'parse_mode' => 'markdown',
             ],
         ]);
     }
