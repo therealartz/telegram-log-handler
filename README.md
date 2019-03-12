@@ -38,15 +38,22 @@ According to Laravel [docs](https://laravel.com/docs/5.8/logging#advanced-monolo
 
 ```php
 return [
+
     // ...
-    'telegram' => [
-        'driver' => 'monolog',
-        'handler' => \TelegramLog\Handler\TelegramHandler::class,
-        'with' => [
-            'botToken' => 'your-bot-token',
-            'chatId' => '@yourChatId',
+    
+    'channels' => [
+    
+        // ...
+        
+        'telegram' => [
+            'driver' => 'monolog',
+            'handler' => \TelegramLog\Handler\TelegramHandler::class,
+            'with' => [
+                'botToken' => 'your-bot-token',
+                'chatId' => '@yourChatId',
+            ],
         ],
-    ],
+    ]б
 ];
 ```
 
