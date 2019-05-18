@@ -34,7 +34,10 @@ class TelegramHandler extends AbstractProcessingHandler
 
         $this->chatId = $chatId;
 
-        $this->httpClient = new \GuzzleHttp\Client(['base_uri' => "https://api.telegram.org/bot{$this->botToken}/"]);
+        $this->httpClient = new \GuzzleHttp\Client([
+            'base_uri' => "https://api.telegram.org/bot{$this->botToken}/",
+            'timeout' => 2,
+        ]);
 
         parent::__construct($level, $bubble);
     }
